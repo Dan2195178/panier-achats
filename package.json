@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.10.1",
     "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1",
     "react": "^18.2.0",
@@ -37,5 +41,5 @@
     ]
   },
   "homepage-info": "Avant de déployer sur GitHub Pages vous devez configurer correctement la propriété homepage ci-dessous : 1) retirer le suffixe '-inactif' de l'étiquette, et 2) remplacer 'code-utilisateur' par le nom de votre compte GitHub et 'nom-de-depot-github' par le nom de votre dépôt GitHub dans la valeur de la propriété.",
-  "homepage-inactif": "https://code-utilisateur.github.io/nom-de-depot-github/"
+  "homepage-inactif": "https://dan2195178.github.io/panier-achats/"
 }
