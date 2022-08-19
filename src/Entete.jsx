@@ -5,6 +5,15 @@ import Badge from '@mui/material/Badge';
 
 export default function Entete(props) {
     // Code JS du composant
+    const panier = props.panier;
+    console.log("Panier dans Entete", panier);
+
+//     let test = {
+//         nom: "Martin",
+//         age:25
+//     }
+//    console.log("Les valeurs dans un objet : ", Object.values(test));
+
     // Renvoyer le "rendu" visuel du composant
     return (
         <header className='Entete'>
@@ -14,7 +23,7 @@ export default function Entete(props) {
                     <li>mon compte</li>
                     {/* <li>panier</li> */}
                     <li>
-                        <Badge badgeContent={5} color="primary">
+                        <Badge badgeContent={Object.values(panier).length} color="primary">
                             <ShoppingCartIcon />
                         </Badge>
                         
@@ -26,4 +35,4 @@ export default function Entete(props) {
 
 }
 
-//  export default Entete;
+

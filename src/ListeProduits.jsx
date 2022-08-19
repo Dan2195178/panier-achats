@@ -2,7 +2,7 @@ import './ListeProduits.scss';
 import Produit from './Produit';
 import tabProduits from './data/produits.json';
 
-export default function ListeProduits(props) {
+export default function ListeProduits({panier, setPanier, id, nom, prix}) {
     // console.log('Tableau des produits : ', tabProduits);
     return (
         <main className="ListeProduits">
@@ -11,7 +11,7 @@ export default function ListeProduits(props) {
                 {/* <Produit id="prd001" nom='T-Shirt rayé noir et blanc' prix='25.99'/>
                 <Produit id="prd002" nom='Pantalon en cotton' prix='37.99'/> */}
                 {tabProduits.map(
-                    prd => <Produit id={prd.id} nom={prd.nom} prix={prd.prix}/>
+                    prd => <Produit panier={panier} setPanier={setPanier} key={prd.id} id={prd.id} nom={prd.nom} prix={prd.prix}/>
                     )}
             </section>
         </main>
